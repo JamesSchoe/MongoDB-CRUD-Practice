@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const MongoClient = require('mongodb').MongoClient;
 const app = express();
 
-MongoClient.connect('mongodb+srv://JamesSchoe:Riv3rsRo4ds!@cluster0.xozo2dk.mongodb.net/?retryWrites=true&w=majority')
+MongoClient.connect('mongodb+srv://Username:Password@cluster0.xozo2dk.mongodb.net/?retryWrites=true&w=majority')
     .then(client => {
         console.log('Connected to Database')
         const db = client.db('zell-wk-project')
